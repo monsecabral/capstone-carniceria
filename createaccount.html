@@ -27,11 +27,11 @@
                             <a class="nav-link active" href="products.html">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="createaccount.html">Create Account</a>
+                            <a class="nav-link" aria-current="page" href="createaccount.html">Create Account</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="login.html">Login</a>
+                            <a class="nav-link" href="login.html">Login</a>
                         </li>
 
                         <li class="nav-item">
@@ -50,7 +50,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>Login</h2>
+                    <h2>Create Account</h2>
                 </div>
             </div>
 
@@ -64,14 +64,52 @@
                             <input type="username" class="form-control" id="exampleInputUsername1">
                           </div>
                         <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">Password</label>
                           <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                          </div>                    
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp">
+                        </div>
+                        
+                        <p>How did you hear about us?</p>
+                        
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Facebook
+                            <label class="form-check-label" for="radio1"></label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Instagram
+                            <label class="form-check-label" for="radio1"></label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Ad
+                            <label class="form-check-label" for="radio1"></label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Newsletter
+                            <label class="form-check-label" for="radio1"></label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Friends/family/coworker
+                            <label class="form-check-label" for="radio1"></label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Other
+                            <label class="form-check-label" for="radio1"></label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create account</button>
                       
                     </form>
 
