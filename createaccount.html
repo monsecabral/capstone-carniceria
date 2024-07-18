@@ -4,10 +4,90 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Create Account</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="css/site.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #d8eee5, #218e4b);
+            font-family: 'Arial', sans-serif;
+            color: #ea4a14;
+            margin: 0;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #dc3545;
+            font-size: 1.5rem;
+        }
+
+        .navbar-brand:hover {
+            color: #c82333;
+        }
+
+        .navbar-brand {
+            color: #f40921;
+            justify-content: right;
+        }
+
+        .nav-link {
+            color: #eb1010;
+            font-size: 1.1rem;
+            margin: 0 10px;
+        }
+
+        .nav-link:hover {
+            color: #358332;
+        }
+
+        .navbar-collapse {
+            justify-content: center;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler-icon {
+            color: #c43d3d;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,101 +125,86 @@
         </nav>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Create Account</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputUsername1" class="form-label">Username</label>
-                            <input type="username" class="form-control" id="exampleInputUsername1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="exampleInputPassword2" class="form-label">Confirm password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2"
-                                aria-describedby="emailHelp">
-                        </div>
-
-                        <p>How did you hear about us?</p>
-
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
-                                checked>Facebook
-                            <label class="form-check-label" for="radio1"></label>
-                        </div>
-
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option1"
-                                checked>Instagram
-                            <label class="form-check-label" for="radio1"></label>
-                        </div>
-
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option1"
-                                checked>Ad
-                            <label class="form-check-label" for="radio1"></label>
-                        </div>
-
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option1"
-                                checked>Newsletter
-                            <label class="form-check-label" for="radio1"></label>
-                        </div>
-
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option1"
-                                checked>Friends/family/coworker
-                            <label class="form-check-label" for="radio1"></label>
-                        </div>
-
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio6" name="optradio" value="option1"
-                                checked>Other
-                            <label class="form-check-label" for="radio1"></label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Create account</button>
-
-                    </form>
-
-                </div>
-                <div class="col-md-2"></div>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Create Account</h2>
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="InputUsername" class="form-label">Username</label>
+                        <input type="username" class="form-control" id="InputUsername">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="InputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPassword2" class="form-label">Confirm password</label>
+                        <input type="password" class="form-control" id="InputPassword2"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <p>How did you hear about us?</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                            value="option1">Facebook
+                        <label class="form-check-label" for="radio1"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                            value="option1">Instagram
+                        <label class="form-check-label" for="radio2"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option1">Ad
+                        <label class="form-check-label" for="radio3"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio4" name="optradio"
+                            value="option1">Newsletter
+                        <label class="form-check-label" for="radio4"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio5" name="optradio"
+                            value="option1">Friends/family/coworker
+                        <label class="form-check-label" for="radio5"></label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio6" name="optradio" value="option1">Other
+                        <label class="form-check-label" for="radio6"></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create account</button>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
     </main>
 
     <footer>
         <div class="container">
             <footer class="py-3 my-4">
-              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="products.html" class="nav-link px-2 text-body-secondary">Products</a></li>
-                <li class="nav-item"><a href="createaccount.html" class="nav-link px-2 text-body-secondary">Create Account</a></li>
-                <li class="nav-item"><a href="login.html" class="nav-link px-2 text-body-secondary">Login</a></li>
-                <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
-              </ul>
-              <p class="text-center text-body-secondary">&copy; 2024 Year Up, Rockefellers</p>
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link px-2 text-body-secondary">Products</a>
+                    </li>
+                    <li class="nav-item"><a href="createaccount.html" class="nav-link px-2 text-body-secondary">Create
+                            Account</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link px-2 text-body-secondary">Login</a></li>
+                    <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-body-secondary">Contact
+                            Us</a></li>
+                </ul>
+                <p class="text-center text-body-secondary">&copy; 2024 Year Up, Rockefellers</p>
             </footer>
-          </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -148,4 +213,4 @@
     <script src="scripts/site.js"></script>
 </body>
 
-</html> 
+</html>
